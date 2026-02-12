@@ -1,0 +1,177 @@
+/* =========================
+   NAVBAR BASE
+========================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: #e6f6ff; /* sky blue */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   LOGO
+========================= */
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #5a3b1f; /* brown */
+  text-decoration: none;
+}
+
+/* =========================
+   LINKS CONTAINER
+========================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
+/* =========================
+   BOXED LINKS
+========================= */
+.nav-links li a,
+.dropdown-title {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #5a3b1f;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.nav-links li a:hover,
+.dropdown-title:hover {
+  background: #ff9800; /* orange */
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Active page */
+.nav-links li a.active {
+  background: #4fc3f7; /* sky blue */
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* =========================
+   GIVE BUTTON (SPECIAL)
+========================= */
+.give-link {
+  background: linear-gradient(135deg, #ff9800, #ff5722) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.give-link:hover {
+  background: linear-gradient(135deg, #ff5722, #e65100) !important;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown {
+  position: relative;
+}
+/* =========================
+   LOGO IMAGE
+========================= */
+.nav-logo img {
+  height: 50px;          /* Adjust the height */
+  width: auto;            /* Maintain aspect ratio */
+  object-fit: contain;    /* Ensure it doesn't stretch */
+  border-radius: 8px;     /* Optional: slight rounding */
+}
+
+/* Optional: add spacing between logo and nav items */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;  /* Space between logo and text (if any) */
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 220px;
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+}
+
+.dropdown-menu li a:hover {
+  background: #e6f6ff;
+  color: #5a3b1f;
+}
+
+/* =========================
+   HAMBURGER (MOBILE)
+========================= */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #5a3b1f;
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #e6f6ff;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #f7fbff;
+    margin-top: 10px;
+  }
+}
