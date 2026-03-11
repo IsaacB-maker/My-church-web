@@ -37,17 +37,22 @@ function Home() {
         <div className="service-cards">
           <div className="card">
             <h3>Sunday Service</h3>
-            <p>9:00 AM – 12:00 PM</p>
+            <p>10:00 AM – 12:30 PM</p>
           </div>
 
           <div className="card">
             <h3>Midweek Fellowship</h3>
-            <p>Wednesday – 6:00 PM</p>
+            <p>Wednesday 5:00PM – 6:00 PM</p>
           </div>
 
           <div className="card">
             <h3>Prayer Night</h3>
-            <p>Friday – 7:00 PM</p>
+            <p>Every First Friday Of The Week - 7:00 PM</p>
+          </div>
+
+          <div className="card">
+            <h3>Counselling</h3>
+            <p>Saturday: 9:00 AM - 4:00 PM</p>
           </div>
         </div>
       </section>
