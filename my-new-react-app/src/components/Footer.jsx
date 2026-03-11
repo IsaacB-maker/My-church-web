@@ -25,7 +25,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Our Church. All rights reserved.
+        © {new Date().getFullYear()} Electus Gospel Ministries International. All rights reserved.
       </div>
     </footer>
   );
