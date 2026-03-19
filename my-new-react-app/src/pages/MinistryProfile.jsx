@@ -4,7 +4,7 @@ function MinistryProfile() {
   return (
     <PageLayout title="Ministry Profile">
       <p>
-        Grace Church operates through various ministries focused on
+        Electus Gospel Ministries International Church operates through various ministries focused on
         spiritual growth, outreach, and service.
       </p>
       <ul>
