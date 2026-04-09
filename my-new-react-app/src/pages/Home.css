@@ -1,0 +1,88 @@
+.home {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(
+      rgba(135, 206, 235, 0.7),
+      rgba(255, 140, 66, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #e63946;
+  color: white;
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+/* WELCOME */
+.welcome {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+/* SERVICES */
+.services {
+  background: #f5f7fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
