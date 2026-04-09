@@ -1,0 +1,276 @@
+.give-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #0b1c2d;
+}
+
+/* HERO */
+.give-hero {
+  background: linear-gradient(
+    135deg,
+    #4fc3f7,  /* sky blue */
+    #ff8c42   /* orange */
+  );
+
+  background-size: cover;
+
+  background-position: center;
+
+  padding: 100px 20px;
+
+  text-align: center;
+
+  color: #ffffff; /* text color for contrast */
+}
+
+
+.give-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.give-hero p {
+  font-size: 1.2rem;
+}
+
+/* BIBLE VERSE */
+.give-verse {
+  text-align: center;
+  margin: 40px 20px;
+  font-size: 1.3rem;
+  font-style: italic;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.give-verse strong {
+  color: #e63946;
+}
+
+/* GIVE OPTIONS */
+.give-options-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.give-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.give-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.give-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.give-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.give-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background: #f0f4f8;
+}
+
+/* AMOUNT SELECTION */
+.amount-section {
+  text-align: center;
+  margin: 60px 20px;
+}
+
+.amount-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.amount-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.amount-boxes button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: 2px solid #0b1c2d;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.amount-boxes button:hover {
+  background: #0b1c2d;
+  color: white;
+}
+
+/* GIVE NOW BUTTON */
+.give-now {
+  background: linear-gradient(
+    135deg,
+    #4fc3f7,  /* sky blue */
+    #ff8c42   /* orange */
+  );
+  color: #ffffff;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.give-now:hover {
+  background: #d62839;
+}
+
+.secure-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* PRAYER REQUEST */
+.prayer-request {
+  background: #f5f7fa;
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+.prayer-request h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.prayer-request p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.prayer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prayer-form input,
+.prayer-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #0b1c2d;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+}
+
+.prayer-form textarea {
+  min-height: 120px;
+}
+
+.prayer-form button {
+  background:linear-gradient(
+    135deg,
+    #4fc3f7,  /* sky blue */
+    #ff8c42   /* orange */
+  );
+  color: white;
+  border: none;
+  padding: 15px 0;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prayer-form button:hover {
+  background: linear-gradient(
+    135deg,
+    #4fc3f7,  /* sky blue */
+    #ff8c42   /* orange */
+  );
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .give-hero {
+    padding: 80px 20px;
+  }
+
+  .give-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .give-hero p {
+    font-size: 1rem;
+  }
+
+  .give-options {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .amount-boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .amount-boxes button {
+    width: 100%;
+  }
+
+  .prayer-request {
+    padding: 60px 20px;
+  }
+
+  .prayer-request h2 {
+    font-size: 1.8rem;
+  }
+
+  .prayer-request p {
+    font-size: 0.95rem;
+  }
+
+  .prayer-form input,
+  .prayer-form textarea,
+  .prayer-form button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .give-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .give-hero p {
+    font-size: 0.9rem;
+  }
+
+  .give-card {
+    padding: 30px 15px;
+  }
+
+  .prayer-form input,
+  .prayer-form textarea {
+    padding: 10px 12px;
+  }
+}
