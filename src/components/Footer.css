@@ -1,0 +1,64 @@
+/* Main footer container */
+.footer {
+  background: linear-gradient(
+    135deg,
+    #4fc3f7,  /* sky blue */
+    #ff8c42   /* orange */
+  );
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Grid for main footer content */
+.footer-grid {
+  display: flex;
+  justify-content: space-between;  /* space between sections */
+  align-items: flex-start;         /* align items to top */
+  flex-wrap: wrap;                 /* wrap on smaller screens */
+  gap: 20px;                       /* space between sections */
+}
+
+/* Each footer section */
+.footer-grid .section {
+  flex: 1 1 250px; /* flexible, min width 250px */
+}
+
+/* Section headings */
+.footer-grid .section h3 {
+  color: #8b5a2b; /* brown */
+  margin-bottom: 15px;
+}
+
+/* Links inside footer */
+.footer-grid .section a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-grid .section a:hover {
+  color: #8b5a2b; /* brown hover */
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.1); /* subtle overlay */
+  font-size: 0.9rem;
+}
+
+/* Responsive: stack sections on mobile */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-grid .section {
+    margin-bottom: 20px;
+  }
+}
