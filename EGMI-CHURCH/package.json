@@ -1,0 +1,20 @@
+{
+  "name": "my-new-react-app",
+  "version": "1.0.0",
+  "homepage": "https://isaacb-maker.github.io/My-church-web/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "deploy-all": "vite build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "gh-pages": "^6.0.0"
+  }
+}
