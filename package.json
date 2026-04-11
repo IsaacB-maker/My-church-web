@@ -1,6 +1,7 @@
 {
   "name": "my-new-react-app",
   "version": "1.0.0",
+  "private": true,
   "homepage": "https://isaacb-maker.github.io/My-church-web",
   "scripts": {
     "dev": "vite",
